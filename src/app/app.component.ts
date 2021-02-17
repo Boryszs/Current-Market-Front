@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'exchange-market';
+  title = 'Exchange Market';
+  links = [
+    { path: '/home', icon: 'home', title: 'Home' },
+    { path: '/exchange', icon: 'euro_symbol', title: 'Exchange' },
+    { path: '/crypto', icon: 'payment', title: 'Crypto'},
+    { path: '/currency', icon: 'price_change', title: 'Currecny'},
+  ];
+
+
+  logout(){
+    console.log("log out");
+  }
 }

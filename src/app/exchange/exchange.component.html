@@ -1,0 +1,87 @@
+
+<h1><strong>Exchange Market</strong></h1>
+<mat-tab-group >
+    <div class="mat-elevation-z8">
+    <mat-tab label="Poland Exchange Market">
+    <table mat-table [dataSource]="dataSourcePl">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+    </ng-container>
+    <ng-container matColumnDef="change">
+        <th mat-header-cell *matHeaderCellDef> Change </th>
+        <td mat-cell *matCellDef="let element"> {{element.change}} </td>
+    </ng-container>
+    <ng-container matColumnDef="changePercentages">
+        <th mat-header-cell *matHeaderCellDef> Change Percentages </th>
+        <td mat-cell *matCellDef="let element"> {{element.changePercentages}} </td>
+    </ng-container>
+    <ng-container matColumnDef="open">
+        <th mat-header-cell *matHeaderCellDef> Open </th>
+        <td mat-cell *matCellDef="let element"> {{element.open}} </td>
+    </ng-container>
+    <ng-container matColumnDef="max">
+        <th mat-header-cell *matHeaderCellDef> Max </th>
+        <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+    </ng-container>
+    <ng-container matColumnDef="min">
+        <th mat-header-cell *matHeaderCellDef> Min </th>
+        <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+    </ng-container>
+    <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef> Time </th>
+        <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30, 40]" showFirstLastButtons></mat-paginator>  
+</mat-tab>
+</div>
+
+<div class="mat-elevation-z8">
+    <mat-tab label="World Exchange Market">
+    <table mat-table [dataSource]="dataSourceW">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+    </ng-container>
+    <ng-container matColumnDef="change">
+        <th mat-header-cell *matHeaderCellDef> Change </th>
+        <td mat-cell *matCellDef="let element"> {{element.change}} </td>
+    </ng-container>
+    <ng-container matColumnDef="changePercentages">
+        <th mat-header-cell *matHeaderCellDef> Change Percentages </th>
+        <td mat-cell *matCellDef="let element"> {{element.changePercentages}} </td>
+    </ng-container>
+    <ng-container matColumnDef="open">
+        <th mat-header-cell *matHeaderCellDef> Open </th>
+        <td mat-cell *matCellDef="let element"> {{element.open}} </td>
+    </ng-container>
+    <ng-container matColumnDef="max">
+        <th mat-header-cell *matHeaderCellDef> Max </th>
+        <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+    </ng-container>
+    <ng-container matColumnDef="min">
+        <th mat-header-cell *matHeaderCellDef> Min </th>
+        <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+    </ng-container>
+    <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef> Time </th>
+        <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator #paginator2  [pageSizeOptions]="[10, 20, 30, 40]" showFirstLastButtons></mat-paginator>  
+</mat-tab>
+</div> 
+</mat-tab-group>    
