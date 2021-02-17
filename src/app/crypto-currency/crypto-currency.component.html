@@ -1,7 +1,12 @@
 
 <h1><strong>Crypto Currency</strong></h1>
-
+ <div class="right">
+    <mat-form-field [style.width.px]=250> 
+           <input matInput type="text" (keyup)="doFilter($any($event.target).value)" placeholder="Filter" >
+    </mat-form-field>
+  </div>
 <div class="mat-elevation-z8">
+ 
     <table mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>

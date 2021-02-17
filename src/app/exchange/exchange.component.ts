@@ -30,6 +30,14 @@ export class ExchangeComponent implements AfterViewInit,OnInit {
   ngOnInit(): void {
   }
 
+  public doFilter(value: string){
+    this.dataSourcePl.filter = value.trim().toLocaleLowerCase();
+  }
+
+  public doFilter1(value: string){
+    this.dataSourceW.filter = value.trim().toLocaleLowerCase();
+  }
+
   getExchange(): void{
     this.service.exchangeWAll().subscribe(dataW => this.dataSourceW.data = dataW); 
     this.service.exchangePlAll().subscribe(dataP => this.dataSourcePl.data = dataP); 

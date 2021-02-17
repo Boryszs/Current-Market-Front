@@ -1,8 +1,16 @@
 
 <h1><strong>Exchange Market</strong></h1>
+
 <mat-tab-group >
     <div class="mat-elevation-z8">
+    
     <mat-tab label="Poland Exchange Market">
+    <section></section>
+    <div class="right">
+      <mat-form-field [style.width.px]=250> 
+             <input matInput type="text" (keyup)="doFilter($any($event.target).value)" placeholder="Filter" >
+      </mat-form-field>
+    </div>
     <table mat-table [dataSource]="dataSourcePl">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -45,6 +53,11 @@
 
 <div class="mat-elevation-z8">
     <mat-tab label="World Exchange Market">
+      <div class="right">
+        <mat-form-field [style.width.px]=250> 
+               <input matInput type="text" (keyup)="doFilter1($any($event.target).value)" placeholder="Filter" >
+        </mat-form-field>
+      </div>
     <table mat-table [dataSource]="dataSourceW">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>

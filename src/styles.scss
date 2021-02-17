@@ -6,6 +6,11 @@ html {
     height: 100%;
   }
   
+  .right {
+    display: flex;
+    justify-content: center
+  }
+
   body {
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -43,8 +48,8 @@ html {
   
   .header {
     padding-bottom: 20px;
-    color: #673ab7;
-    border-bottom: 2px solid #673ab7;
+    color: #3990aa;
+    border-bottom: 2px solid #3990aa;
   }
   
   app-root {

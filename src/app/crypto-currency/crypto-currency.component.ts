@@ -23,6 +23,11 @@ export class CryptoCurrencyComponent implements AfterViewInit,OnInit{
     this.getCrypto(); 
   }
 
+  public doFilter(value: string){
+    this.dataSource.filter = value.trim().toLocaleLowerCase();
+  }
+
+
   getCrypto(){
     this.service.cryptoImportnant().subscribe(data => this.dataSource.data = data); 
   }

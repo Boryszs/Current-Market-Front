@@ -14,7 +14,6 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
