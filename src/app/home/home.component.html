@@ -1,3 +1,151 @@
-<mat-sidenav-container>
-    <h1>home !!!</h1>
-</mat-sidenav-container>
+<br>
+<h1>Important Exchange Market</h1>
+<br>
+<h3><strong>Crypto Currency</strong></h3>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSourceCurrencyC">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let element"> {{element.courseAverage}} </td>
+    </ng-container>
+    <ng-container matColumnDef="value">
+        <th mat-header-cell *matHeaderCellDef> Value </th>
+        <td mat-cell *matCellDef="let element"> {{element.marketValue}} </td>
+    </ng-container>
+    <ng-container matColumnDef="change">
+        <th mat-header-cell *matHeaderCellDef> Change Percentages </th>
+        <td mat-cell *matCellDef="let element"> {{element.change}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsCurrencyC"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsCurrencyC;"></tr>
+  </table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h3><strong>Currency</strong></h3>
+
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSourceCurrency">
+    <ng-container matColumnDef="country">
+      <th mat-header-cell *matHeaderCellDef> Country </th>
+      <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name Currency </th>
+      <td mat-cell *matCellDef="let element"> {{element.currency}} </td>
+    </ng-container>
+    <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+    <ng-container matColumnDef="exchange">
+        <th mat-header-cell *matHeaderCellDef> Average Exchange </th>
+        <td mat-cell *matCellDef="let element"> {{element.averageExchange}} </td>
+    </ng-container>
+    <ng-container matColumnDef="percentage change">
+      <th mat-header-cell *matHeaderCellDef> Percentage Change </th>
+      <td mat-cell *matCellDef="let element"> {{element.percentageChange}} </td>
+  </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsCurrency"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsCurrency;"></tr>
+  </table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<h3><strong>Exchange Poland</strong></h3>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSourceExchangePl">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+    </ng-container>
+    <ng-container matColumnDef="change">
+        <th mat-header-cell *matHeaderCellDef> Change </th>
+        <td mat-cell *matCellDef="let element"> {{element.change}} </td>
+    </ng-container>
+    <ng-container matColumnDef="changePercentages">
+        <th mat-header-cell *matHeaderCellDef> Change Percentages </th>
+        <td mat-cell *matCellDef="let element"> {{element.changePercentages}} </td>
+    </ng-container>
+    <ng-container matColumnDef="open">
+        <th mat-header-cell *matHeaderCellDef> Open </th>
+        <td mat-cell *matCellDef="let element"> {{element.open}} </td>
+    </ng-container>
+    <ng-container matColumnDef="max">
+        <th mat-header-cell *matHeaderCellDef> Max </th>
+        <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+    </ng-container>
+    <ng-container matColumnDef="min">
+        <th mat-header-cell *matHeaderCellDef> Min </th>
+        <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+    </ng-container>
+    <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef> Time </th>
+        <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedExchange"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedExchange;"></tr>
+  </table>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<h3><strong>Exchange World</strong></h3>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSourceExchangePl">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="course">
+      <th mat-header-cell *matHeaderCellDef> Course </th>
+      <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+    </ng-container>
+    <ng-container matColumnDef="change">
+        <th mat-header-cell *matHeaderCellDef> Change </th>
+        <td mat-cell *matCellDef="let element"> {{element.change}} </td>
+    </ng-container>
+    <ng-container matColumnDef="changePercentages">
+        <th mat-header-cell *matHeaderCellDef> Change Percentages </th>
+        <td mat-cell *matCellDef="let element"> {{element.changePercentages}} </td>
+    </ng-container>
+    <ng-container matColumnDef="open">
+        <th mat-header-cell *matHeaderCellDef> Open </th>
+        <td mat-cell *matCellDef="let element"> {{element.open}} </td>
+    </ng-container>
+    <ng-container matColumnDef="max">
+        <th mat-header-cell *matHeaderCellDef> Max </th>
+        <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+    </ng-container>
+    <ng-container matColumnDef="min">
+        <th mat-header-cell *matHeaderCellDef> Min </th>
+        <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+    </ng-container>
+    <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef> Time </th>
+        <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedExchange"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedExchange;"></tr>
+  </table>
+</div>
+<br>
+<br>
+
+
+
