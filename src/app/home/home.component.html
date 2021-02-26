@@ -3,6 +3,7 @@
 <br>
 <h3><strong>Crypto Currency</strong></h3>
 <div class="mat-elevation-z8">
+  <ng-container *ngIf="dataSourceCurrencyC">
     <table mat-table [dataSource]="dataSourceCurrencyC">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -23,6 +24,7 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumnsCurrencyC"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumnsCurrencyC;"></tr>
   </table>
+</ng-container>
 </div>
 <br>
 <br>
@@ -31,6 +33,7 @@
 <h3><strong>Currency</strong></h3>
 
 <div class="mat-elevation-z8">
+  <ng-container *ngIf="dataSourceCurrency">
     <table mat-table [dataSource]="dataSourceCurrency">
     <ng-container matColumnDef="country">
       <th mat-header-cell *matHeaderCellDef> Country </th>
@@ -55,6 +58,7 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumnsCurrency"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumnsCurrency;"></tr>
   </table>
+</ng-container>
 </div>
 
 <br>
@@ -63,6 +67,7 @@
 <br>
 <h3><strong>Exchange Poland</strong></h3>
 <div class="mat-elevation-z8">
+  <ng-container *ngIf="dataSourceExchangePl">
     <table mat-table [dataSource]="dataSourceExchangePl">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -99,6 +104,7 @@
     <tr mat-header-row *matHeaderRowDef="displayedExchange"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedExchange;"></tr>
   </table>
+</ng-container>
 </div>
 
 <br>
@@ -107,6 +113,7 @@
 <br>
 <h3><strong>Exchange World</strong></h3>
 <div class="mat-elevation-z8">
+  <ng-container *ngIf="dataSourceExchangePl">
     <table mat-table [dataSource]="dataSourceExchangePl">
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
@@ -143,6 +150,7 @@
     <tr mat-header-row *matHeaderRowDef="displayedExchange"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedExchange;"></tr>
   </table>
+</ng-container>
 </div>
 <br>
 <br>
