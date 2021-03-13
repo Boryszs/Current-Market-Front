@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ServiceService} from '../services/service.service';
+import { ServiceService } from '../services/service.service';
 import { DataSource } from '@angular/cdk/table';
 
 @Component({
@@ -14,9 +14,14 @@ export class HomeComponent implements OnInit {
   dataSourceExchangePl;
   dataSourceExchangeW;
   displayedColumnsCurrencyC: string[] = ['name', 'course', 'value', 'change'];
-  displayedColumnsCurrency: string[] = ['country', 'name', 'symbol', 'exchange','percentage change'];
-  displayedExchange: string[] = ['name', 'course', 'change', 'changePercentages','open','max','min','time'];
-  constructor(private service :ServiceService) { }
+  displayedColumnsCurrency: string[] = ['country', 'name', 'symbol', 'exchange', 'percentage change'];
+  displayedExchange: string[] = ['name', 'course', 'change', 'changePercentages', 'open', 'max', 'min', 'time'];
+  constructor(private service: ServiceService) { }
+
+  toParse(str: String) {
+    console.log(Number(str.replace("%", "").replace(",", ".")));
+    return Number(str.replace("%", "").replace(",", "."));
+  }
 
   ngOnInit(): void {
     this.service.crypto5Importnant().subscribe(data => this.dataSourceCurrencyC = data)
