@@ -13,38 +13,38 @@
       <ng-container *ngIf="dataSourcePl">
         <table mat-table [dataSource]="dataSourcePl">
           <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Name </th>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Name </th>
             <td mat-cell *matCellDef="let element" [ngStyle]="{'font-weight':'bold'}"> {{element.name}} </td>
           </ng-container>
           <ng-container matColumnDef="course">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Course </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.course}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Course </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.course}} </td>
           </ng-container>
           <ng-container matColumnDef="change">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Change </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.change}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Change </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.change}} </td>
           </ng-container>
           <ng-container matColumnDef="changePercentages">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Change Percentages </th>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Change Percentages </th>
             <td mat-cell *matCellDef="let element"
-              [ngStyle]="{'color':toParse(element.changePercentages) > 0 ? 'green':'red'}" class="txt">
+              [ngStyle]="{'color':toParse(element.changePercentages) > 0 ? 'green':'red'}" class="sh-txt">
               {{element.changePercentages}} </td>
           </ng-container>
           <ng-container matColumnDef="open">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Open </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.open}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Open </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.open}} </td>
           </ng-container>
           <ng-container matColumnDef="max">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Max </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.max}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Max </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.max}} </td>
           </ng-container>
           <ng-container matColumnDef="min">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Min </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.min}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Min </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.min}} </td>
           </ng-container>
           <ng-container matColumnDef="time">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Time </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.time}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Time </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.time}} </td>
           </ng-container>
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
@@ -64,38 +64,38 @@
       <ng-container *ngIf="dataSourceW">
         <table mat-table [dataSource]="dataSourceW">
           <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Name </th>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Name </th>
             <td mat-cell *matCellDef="let element" [ngStyle]="{'font-weight':'bold'}"> {{element.name}} </td>
           </ng-container>
           <ng-container matColumnDef="course">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Course </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.course}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Course </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.course}} </td>
           </ng-container>
           <ng-container matColumnDef="change">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Change </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.change}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Change </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.change}} </td>
           </ng-container>
           <ng-container matColumnDef="changePercentages">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Change Percentages </th>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Change Percentages </th>
             <td mat-cell *matCellDef="let element"
-              [ngStyle]="{'color':toParse(element.changePercentage) > 0 ? 'green':'red'}" class="txt">
+              [ngStyle]="{'color':toParse(element.changePercentage) > 0 ? 'green':'red'}" class="sh-txt">
               {{element.changePercentage}} </td>
           </ng-container>
           <ng-container matColumnDef="open">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Open </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.open}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Open </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.open}} </td>
           </ng-container>
           <ng-container matColumnDef="max">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Max </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.max}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Max </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.max}} </td>
           </ng-container>
           <ng-container matColumnDef="min">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Min </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.min}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Min </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.min}} </td>
           </ng-container>
           <ng-container matColumnDef="time">
-            <th mat-header-cell *matHeaderCellDef class="txt"> Time </th>
-            <td mat-cell *matCellDef="let element" class="txt"> {{element.time}} </td>
+            <th mat-header-cell *matHeaderCellDef class="sh-txt"> Time </th>
+            <td mat-cell *matCellDef="let element" class="sh-txt"> {{element.time}} </td>
           </ng-container>
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
